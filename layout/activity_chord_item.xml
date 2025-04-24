@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/ungu">
+
+    <EditText
+        android:id="@+id/SearchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Masukkan Judul Lagu..."
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:backgroundTint="#FFFFFF"
+        android:padding="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btnVoiceSearch"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mic"
+        android:contentDescription="Pencarian Suara"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chords"
+    android:padding="16dp">
+
+    <!-- Judul Lagu -->
+    <TextView
+        android:id="@+id/chordSongTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Judul Lagu"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Scrollable Chord dan Lirik -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/chordSongLyrics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lirik dan Chord akan tampil di sini"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="6dp" />
+    </ScrollView>
+</LinearLayout>
